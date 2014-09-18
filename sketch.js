@@ -4,7 +4,7 @@ function setup() {
 function draw() {
 	background(104, 81, 62,60);
    for(var i = 0 ; i <1420;i++){
-   stroke(i*255/1420,50,50);
+   stroke(i*255/1420,50,50,60);
    line(0,i,2500,i);}
    
 for(var i = 0 ; i <1420;i++){
@@ -403,7 +403,7 @@ for(var i = 0 ; i <1420;i++){
 
 
 	strokeWeight(1);
-   fill(35,214,232);
+   fill(35,214,232,15);
 	stroke(255, 255, 255);
 	ellipse(1970, 570, mouseX *0.1, mouseX *0.1);
 	
@@ -416,10 +416,10 @@ for(var i = 0 ; i <1420;i++){
 	noFill();
 	ellipse(2250, 1100, mouseY *0.4, mouseY *0.4);
 
-	fill(35,214,232,127);
+	fill(35,214,232,10);
 	ellipse(300, 1100, mouseX *0.2, mouseX *0.2);
 
-	fill(35,214,232,200);
+	fill(35,214,232,20);
 	ellipse(2400, 100, mouseY *0.3, mouseY *0.3);
 
 	noFill();
@@ -440,7 +440,7 @@ for(var i = 0 ; i <1420;i++){
 	noFill();
    strokeWeight(2);
 	ellipse(1450, 2300, mouseX *0.3, mouseX *0.3);
-	fill(35,214,232);
+	fill(35,214,232,20);
 	ellipse(1450, 2300, mouseY *0.1, mouseY *0.1);
 	noFill();
 	stroke(54, 172, 157);
