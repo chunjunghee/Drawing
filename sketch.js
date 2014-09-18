@@ -431,7 +431,7 @@ function setup() {
 	ellipse(1450, 2300, 400, 400);
 	noFill();
 	stroke(54, 172, 157);
-	ellipse(1450, 2300, 700, 700);
+	ellipse(1450, 2300, 710, 710);
 
 noFill();
 }
