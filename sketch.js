@@ -1,9 +1,14 @@
 function setup() {
 	createCanvas(2500, 2500);
-	background(194, 216, 233);
+}
+function draw() {
+	background(229, 178, 149,60);
+   fill(151, 214, 196);
+   rect(0, 1420, 2500, 1420);
 	noFill();
 
-	stroke(233, 158, 96);
+	stroke(255, 255, 255);
+	strokeWeight(5);
 	line(940, 660, 960, 660);
 	line(940, 670, 960, 670);
 	line(940, 680, 950, 680);
@@ -157,7 +162,7 @@ function setup() {
 	line(930, 780, 1110, 780);
 
 
-	stroke(118, 59, 10);
+	stroke(168, 119, 11);
 	line(520, 570, 630, 570);
 	line(510, 580, 660, 580);
 	line(510, 590, 680, 590);
@@ -257,7 +262,7 @@ function setup() {
 	line(1050, 1170, 1060, 1170);
 	line(1050, 1180, 1060, 1180);
 
-	stroke(64, 32, 7);
+	stroke(255, 182, 0);
 	line(880, 470, 940, 470);
 	line(840, 480, 930, 480);
 	line(780, 490, 920, 490);
@@ -388,63 +393,64 @@ function setup() {
 	line(500, 770, 820, 770);
 	line(510, 780, 800, 780);
 
-	fill();
+
+	strokeWeight(1);
+   fill(35,214,232);
 	stroke(255, 255, 255);
-	ellipse(1970, 570, 150, 150);
+	ellipse(1970, 570, mouseX *0.1, mouseX *0.1);
 	
 	noFill();
-	ellipse(1900, 630, 75, 75);
+	ellipse(1900, 630, mouseY *0.3, mouseY *0.3);
 
 	noFill();
-	ellipse(300, 150, 80, 80);
+	ellipse(300, 150, mouseX *0.7, mouseX *0.7);
 
 	noFill();
-	ellipse(2250, 1100, 500, 500);
+	ellipse(2250, 1100, mouseY *0.4, mouseY *0.4);
 
-	fill();
-	ellipse(300, 1100, 300, 300);
+	fill(35,214,232,127);
+	ellipse(300, 1100, mouseX *0.2, mouseX *0.2);
 
-	fill();
-	ellipse(2400, 100, 500, 500);
-
-	noFill();
-	ellipse(540, 1820, 220, 220);
+	fill(35,214,232,200);
+	ellipse(2400, 100, mouseY *0.3, mouseY *0.3);
 
 	noFill();
-	ellipse(540, 1820, 330, 330);
+	ellipse(540, 1820, mouseX *0.1, mouseX *0.1);
 
 	noFill();
-	ellipse(1200, 150, 600, 600);
+	ellipse(540, 1820, mouseY *0.4, mouseY *0.4);
 
 	noFill();
-	ellipse(2300, 1450, 1000, 1000);
+	ellipse(1200, 150, mouseX *0.2, mouseX *0.2);
 
 	noFill();
-	ellipse(2300, 1450, 600, 600);
+	ellipse(2300, 1450, mouseX *0.5, mouseX *0.5);
 
 	noFill();
-	ellipse(1450, 2300, 1200, 1200);
-	fill();
-	ellipse(1450, 2300, 900, 900);
+	ellipse(2300, 1450, mouseY *0.3, mouseY *0.3);
+
 	noFill();
-	stroke(54, 172, 157);
-	ellipse(1450, 2300, 400, 400);
+   strokeWeight(2);
+	ellipse(1450, 2300, mouseX *0.3, mouseX *0.3);
+	fill(35,214,232);
+	ellipse(1450, 2300, mouseY *0.1, mouseY *0.1);
 	noFill();
 	stroke(54, 172, 157);
-	ellipse(1450, 2300, 710, 710);
+	ellipse(1450, 2300, mouseX *0.2, mouseX *0.2);
+	noFill();
+	stroke(54, 172, 157);
+   strokeWeight(2);
+	ellipse(1450, 2300, mouseY *0.5, mouseY *0.5);
+
 
 noFill();
-}
 
-function draw() {
-  //background(246, 153, 136);
-//for (시작상태; 반복하는 조건; 증가값)
-  stroke(134, 153, 184) 	
   for (var x = 1; x <=5; x++)
   {
     ellipse(x * 400 + 1300, x  * 30 + 1450, x * 450, x * 45);
   }
-  stroke(250, 217, 20) 	
+  stroke(255, 141, 39) 	
+  strokeWeight(5);
   var size = Math.abs(mouseX - 320);
 ellipse(320, 240, size, size);
   //ellipse(320, 240, mouseX, mouseY);
