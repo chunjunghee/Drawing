@@ -2,9 +2,17 @@ function setup() {
 	createCanvas(2500, 2500);
 }
 function draw() {
-	background(229, 178, 149,60);
-   fill(151, 214, 196);
-   rect(0, 1420, 2500, 1420);
+	background(104, 81, 62,60);
+   for(var i = 0 ; i <1420;i++){
+   stroke(i*255/1420,50,50);
+   line(0,i,2500,i);}
+   
+for(var i = 0 ; i <1420;i++){
+   stroke(50,50,i*255/1420);
+   line(0,1420+i,2500,1420+i);
+}
+//fill(151, 214, 196,50);
+  // rect(0, 1420, 2500, 1420);
 	noFill();
 
 	stroke(255, 255, 255);
